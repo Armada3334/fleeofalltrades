@@ -1,9 +1,17 @@
 :root{
-    --bg-color: rgb(20,20,20);
+    --bg-color: rgb(24, 26, 27);
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    margin: 0px;
+    overflow: scroll;
+    padding: 0px;
 }
 
 header {
-    background: linear-gradient(to bottom, rgb(28, 6, 80), rgb(20, 20, 20));
+    background: linear-gradient(to bottom, rgb(28, 6, 80), rgb(24, 26, 27));
     color: white;
     padding: 20px;
 }
@@ -19,6 +27,19 @@ nav {
     width: 100px;
     height: 100px;
     transition: all 0.2s ease-in-out;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo h1 {
+    font-size: 150%;
+    font-weight: 200;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }
 
 .logo:hover {
@@ -53,74 +74,6 @@ nav {
     font-size: 140%;
 }
 
-
-body {
-    background-color: var(--bg-color);
-    height: 100vh;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-    padding: 0px;
-}
-
-main {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-h1, h2, h3, p, a, span, li{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-.offerings {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-}
-
-.offerings ul {
-    background: linear-gradient(to bottom, rgb(28, 6, 80), rgb(20, 20, 20));
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.offerings li {
-    list-style: none;
-    color: rgb(188, 205, 199);
-    font-size: 120%;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 20%;
-    height: 50px;
-    background-color: rgb(30,30,30);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-}
-
 .socials {
     display: flex;
     align-self: right;
@@ -141,6 +94,59 @@ footer {
 .socials img:hover {
     transform: scale(1.2);
 }
+
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+h1, h2, h3, p, a, span, li{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+.offerings {
+    width: 100%;
+    padding: 20px;
+}
+
+.offerings ul {
+    background: linear-gradient(to bottom, rgb(28, 6, 80), rgb(20, 20, 20));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.offerings li {
+    list-style: none;
+    color: rgb(188, 205, 199);
+    font-size: 120%;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 20%;
+    height: 50px;
+    background-color: rgb(30,30,30);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
 
 .copy {
     color: rgb(184, 178, 168);
