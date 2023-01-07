@@ -1,0 +1,95 @@
+:root{
+    --bg-color: rgb(20,20,20);
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 90vh;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+h1, h2, h3, p, a, span {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+  }
+
+
+.copy {
+    color: rgb(184, 178, 168);
+    font-size: 100%;
+    transition: all 0.2s ease-in-out;
+}
+.copy:hover {
+    color: white;
+    font-size: 110%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Footer height */
+    background-color: rgb(30,30,30);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.logosize {
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    background: linear-gradient(to bottom, rgb(28, 6, 80), rgb(20, 20, 20));
+    /* background-color: rgb(28, 6, 80); */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+nav {
+    display: flex;
+}
+  
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+  
+.menu li {
+    margin-right: 20px;
+}
+  
+.menu-button {
+    display: none;
+}
+  
+/* Styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    
+    .menu-button {
+      display: block;
+    }
+  }
