@@ -88,6 +88,8 @@ nav {
 
 .socials img {
     border-radius: 10px;
+    width: 42px;
+    height: 42px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -95,12 +97,33 @@ nav {
     transform: scale(1.2);
 }
 
+.mail img {
+    filter: invert(100%);
+}
+
+.mail img:hover {
+    position: relative; 
+}
+
+
+.mail img:hover::after {
+    content: attr(title); /* Display the text from the title attribute */
+    position: absolute; /* Position the text */
+    bottom: 100%; /* Position the text below the image */
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Center the text horizontally */
+    background-color: black; /* Set the background color of the text */
+    color: white; /* Set the text color */
+    padding: 5px 10px; /* Add some padding to the text */
+    border-radius: 5px; /* Round the corners of the text */
+    font-size: 12px; /* Set the font size */
+}
+
 main {
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    width: 100%;
 }
 
 h1, h2, h3, p, a, span, li{
@@ -114,15 +137,13 @@ a {
 }
 
 .offerings {
-    width: 100%;
     padding: 20px;
-}
-
-.offerings ul {
     background: linear-gradient(to bottom, rgb(28, 6, 80), rgb(20, 20, 20));
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
+    width: 20%;
+    height: 20%;
 }
 
 .offerings li {
